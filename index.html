@@ -640,6 +640,51 @@
             background: var(--bg-alt);
         }
 
+        .highlights-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        @media (max-width: 980px) {
+            .highlights-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .highlight {
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+
+        .highlight-title {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .highlight-text {
+            color: var(--muted);
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
         .showcase-tabs {
             margin: 20px auto 18px auto;
             padding: 0 24px;
@@ -925,6 +970,45 @@
             </div>
         </div>
     </div>
+
+    <section id="experiment-highlights">
+        <div class="title">
+            Experiment Highlights
+        </div>
+
+        <div class="description">
+            Key takeaways from our experiments across understanding, generation, and editing.
+        </div>
+
+        <div class="highlights-wrap">
+            <div class="highlights-grid">
+                <div class="highlight">
+                    <div class="highlight-title">Unified Multimodal Capability</div>
+                    <p class="highlight-text">One unified model covers multimodal understanding, generation, and instruction-based editing.</p>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-title">AR Semantic Planning</div>
+                    <p class="highlight-text">Autoregressive planning provides structured semantics that improves controllability and compositionality.</p>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-title">Diffusion Decoding</div>
+                    <p class="highlight-text">Diffusion decoding translates planned semantics into high-fidelity visual outputs across modalities.</p>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-title">MoE DiT Scaling</div>
+                    <p class="highlight-text">MoE DiT supports scalable capacity for video generation while keeping routing flexible.</p>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-title">Strong Instruction Following</div>
+                    <p class="highlight-text">Consistent instruction following across camera motion, subject actions, and stylization.</p>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-title">Multimodal Editing</div>
+                    <p class="highlight-text">Unified editing interface for both images and videos with temporally coherent edits.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="video-showcase">
         <div class="title">
