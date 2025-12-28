@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>MammothModa</title>
-    <meta name="description" content="MammothModa2: A Unified AR-Diffusion Framework for Multimodal Understanding and Generation">
+    <meta name="description" content="A Unified AR-Diffusion Framework for Multimodal Understanding and Generation">
     <meta name="keywords" content="Video Generation, Multi-Modal">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
@@ -39,6 +39,20 @@
             src: url('./assets/Alegreya-Regular.ttf') format('truetype');
         }
 
+        :root {
+            --bg: #ffffff;
+            --bg-alt: #f7f7fb;
+            --surface: rgba(255, 255, 255, 0.72);
+            --text: #0b0d12;
+            --muted: #5a6372;
+            --border: rgba(15, 23, 42, 0.12);
+            --accent-1: #2563eb;
+            --accent-2: #7c3aed;
+            --shadow: 0 18px 50px rgba(2, 6, 23, 0.12);
+            --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -46,49 +60,62 @@
         video {
             background-color: #000000;
             aspect-ratio: 16 / 9;
+            border-radius: 22px;
+            box-shadow: var(--shadow);
         }
 
         body {
-            background-color: #ffffff;
-            color: #000000;
-            font-family: "Roboto", sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: var(--font-sans);
             padding: 0;
             margin: 0;
             width: 100vw;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-synthesis-weight: none;
+            font-optical-sizing: auto;
         }
 
         #intro {
-            padding: 100px 0 0px 0;
+            padding: 96px 0 36px 0;
             justify-content: center;
             /* Center content vertically */
             text-align: center;
             /* Center text alignment */
-            color: #000000;
+            color: var(--text);
             /* Ensure text color is readable */
-            
+            background:
+                radial-gradient(1200px 600px at 18% 18%, rgba(124, 58, 237, 0.14), rgba(255, 255, 255, 0) 60%),
+                radial-gradient(900px 520px at 78% 12%, rgba(37, 99, 235, 0.12), rgba(255, 255, 255, 0) 55%),
+                linear-gradient(180deg, #ffffff 0%, var(--bg-alt) 100%);
+            border-bottom: 1px solid var(--border);
         }
 
         #intro h1 {
-            font-size: 90px;
-            font-weight: 300;
+            font-size: clamp(44px, 6vw, 74px);
+            font-weight: 650;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
             margin: 20px 0;
         }
 
         #intro h2 {
             margin: 20px 0 40px 0;
-            font-weight: 300;
-            color: #000000
+            font-weight: 420;
+            font-size: clamp(18px, 2.2vw, 28px);
+            color: var(--muted);
         }
 
         #intro h2 strong {
-            color: #000000;
+            color: var(--text);
         }
 
         .authors {
             max-width: 900px;
             font-size: 16px;
             font-weight: 500;
-            color: #ffffff;
+            color: var(--muted);
             text-align: center;
             margin-bottom: 25px;
             width: 80%;
@@ -102,18 +129,18 @@
         }
 
         .author-block a {
-            color: #ffffff;
+            color: var(--text);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .author-block a:hover {
-            color: #fff;
+            color: var(--accent-1);
         }
 
         .author-affiliation {
             font-size: 16px;
-            color: #ffffff;
+            color: var(--muted);
             text-align: center;
             margin-bottom: 60px;
             width: 80%;
@@ -127,59 +154,69 @@
         }
 
         section {
-            max-width: 1920px;
+            max-width: 1320px;
             margin: 0 auto;
         }
 
         .content {
-            padding: 0 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         .button {
-            background-color: #ccc;
-            color: #000;
-            padding: 10px 20px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+            color: #ffffff;
+            padding: 12px 20px;
             border-radius: 100px;
             cursor: pointer;
-            transition: background-color 0.5s;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
             text-decoration: none;
             margin-right: 8px;
             margin-bottom: 8px;
             display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.18);
+            font-weight: 600;
         }
 
         .button:hover {
-            background-color: #fff;
+            transform: translateY(-1px);
+            filter: brightness(1.02);
+            box-shadow: 0 16px 40px rgba(37, 99, 235, 0.22);
         }
 
         .bibtex-section {
-            background-color: #111;
-            padding: 40px 10%;
+            background-color: var(--bg-alt);
+            padding: 56px 24px;
             /* padding: 20px; */
             text-align: center;
             margin-top: 60px;
-            color: #ccc;
+            color: var(--text);
             /* max-width: 800px; */
+            border-top: 1px solid var(--border);
         }
 
         .bibtex-section h3 {
             font-size: 24px;
-            font-weight: 400;
-            color: #ccc;
+            font-weight: 650;
+            color: var(--text);
             margin-bottom: 20px;
         }
 
         .bibtex-code {
-            background-color: #222;
-            color: #ddd;
+            background-color: #ffffff;
+            color: #111827;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 16px;
             text-align: left;
             display: inline-block;
-            font-family: monospace;
+            font-family: var(--font-mono);
             /* max-width: 800px; */
             overflow-x: auto;
             width: 100%;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
         }
 
         section {
@@ -191,27 +228,36 @@
         }
 
         .title {
-            background-color: #000;
+            background: var(--surface);
+            backdrop-filter: blur(14px);
             position: sticky;
             top: 0;
-            padding: 20px 10%;
-            font-size: 20px;
-            font-weight: 600;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
             z-index: 1000;
-            min-height: 60px;
+            min-height: 64px;
             box-sizing: border-box;
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
         }
 
         .description {
-            padding: 0 10% 20px 10%;
-            color: #999;
-            line-height: 25px;
-            font-weight: 300;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 24px 22px 24px;
+            color: var(--muted);
+            line-height: 1.65;
+            font-weight: 420;
         }
 
         .highlight {
-            color: #fff;
-            font-weight: 500;
+            color: var(--text);
+            font-weight: 650;
         }
 
         .flex-row {
@@ -230,9 +276,10 @@
         }
 
         .flex>div {
-            width: calc(100% / 3 - 5px * 2 / 3);
-            margin-top: 2.5px;
-            margin-bottom: 2.5px;
+            flex: 1 1 calc(33.333% - 14px);
+            width: auto;
+            margin-top: 0;
+            margin-bottom: 0;
             position: relative;
         }
 
@@ -240,11 +287,16 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            padding: 0 5px;
+            gap: 14px;
+            padding: 0 24px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .prompt-wrap {
             position: relative;
+            border-radius: 22px;
+            overflow: hidden;
         }
 
         .flex-2 {
@@ -401,11 +453,13 @@
         .ruler {
             text-align: center;
             position: sticky;
-            top: 60px;
+            top: 64px;
             z-index: 999;
-            background-color: #000;
-            color: #999;
-            padding: 5px 0;
+            background: var(--surface);
+            backdrop-filter: blur(14px);
+            color: var(--muted);
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border);
         }
 
         .ruler>div {
@@ -414,7 +468,7 @@
         }
 
         .selected {
-            box-shadow: 0 0 0 5px #fff;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.35);
         }
 
         #title-container {
@@ -444,21 +498,21 @@
         }
 
         .title-art {
-            font-family: 'DancingScript', sans-serif;
+            font-family: var(--font-sans);
         }
 
         .title-art2 {
-            font-family: 'Caveat', sans-serif;
+            font-family: var(--font-sans);
         }
 
         .title-art3 {
-            font-family: 'Alegreya', sans-serif;
+            font-family: var(--font-sans);
         }
 
         h2 {
             font-size: 2.5em;
-            color: rgb(255, 255, 255);
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            color: var(--text);
+            text-shadow: none;
         }
 
         #video-wrapper {
@@ -466,16 +520,20 @@
             max-width: 720px;
             padding-bottom: 40%;
             margin: 0 auto;
-            background: #000000;
+            background: transparent;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
 
         .ethics-section {
-            padding: 100px 10%;
+            padding: 72px 0;
             text-align: center;
             margin-top: 60px;
-            color: #ccc;
-            max-width: 1500px;
+            color: var(--muted);
+            max-width: 1200px;
             margin: 0 auto;
+            padding-left: 24px;
+            padding-right: 24px;
         }
 
         @media (max-width: 768px) {
@@ -664,7 +722,7 @@
                 <img id="title-icon" src="./assets/logo.png" alt="Icon">
                 <h1><strong>MammothModa</strong></h1>
             </div>
-            <h2><strong>MammothModa2: A Unified AR-Diffusion Framework for Multimodal Understanding and Generation</strong></h2>
+            <h2><strong>A Unified AR-Diffusion Framework for Multimodal Understanding and Generation</strong></h2>
             <div class="authors">
                 
             </div>
@@ -693,7 +751,7 @@
     </div>
 
     <section id="video">
-        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+        <div class="title">
             Text-to-Image Generation
         </div>
 
@@ -810,7 +868,7 @@
     </section>
 
     <section id="video">
-        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+        <div class="title">
             Instruction-Based Editing
         </div>
 
@@ -923,7 +981,7 @@
     </section>
 
     <section id="video">
-        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+        <div class="title">
             Multimodal Understanding
         </div>
 
@@ -988,7 +1046,7 @@
     </section>
 
     <section id="video">
-        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+        <div class="title">
             Autoregressive Semantic Planning
         </div>
         <div class="description">
@@ -1051,7 +1109,7 @@
     </section>
 
     <section id="video">
-        <div class="title" style="font-family: 'Alegreya'; font-size: 1.6em;">
+        <div class="title">
             Unified Joint Training & Flow Matching
         </div>
 
