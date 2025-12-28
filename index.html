@@ -566,6 +566,22 @@
             height: auto;
         }
 
+        .arch-container {
+            max-width: 1200px;
+            margin: 18px auto 0 auto;
+            padding: 0 24px;
+        }
+
+        .arch-image {
+            width: 100%;
+            height: auto;
+            border-radius: 22px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            background: #ffffff;
+            display: block;
+        }
+
         .units-rule {
             display: grid;
             grid-auto-flow: column;
@@ -739,16 +755,11 @@
 
     <div class="container text-center" style="margin-top: 50px; text-align: center;">
         <p class="title-art3" style="font-size: 1.6em;"> Unified AR-Diffusion for Multimodal Understanding and Generation</p>
-        <p class="description" style="font-size: 1.0em;"> A short showcase by MammothModa2</p>
+        <p class="description" style="font-size: 1.0em;"> Architecture</p>
     </div>
 
-
-    <div class="video-container">
-        <video controls>
-            <source src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/teaser_1225.mp4"
-                type="video/mp4">
-            Flexible Dreams, Seamless Montage
-        </video>
+    <div class="arch-container">
+        <img class="arch-image" src="./assets/arch.png" alt="Architecture diagram">
     </div>
 
     <section id="video">
@@ -769,15 +780,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/urban_evolution_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_1.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 10] Train moves forward, static window frame; [10, 15] Window shatters into
-                    digital fragments; [15, 20] Camera flies through the window into a future cyberpunk city.
-                </div>
+                <div class="prompt">A close-up shot of a fox cautiously approaching the camera, sniffing at the lens curiously. The camera captures the fox’s inquisitive expression, the twitching of its nose, and the rustling of leaves under its paws.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -786,14 +795,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/morphing_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_2.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 2] Droplet turns into a swan; [2, 7] Swan turns into a mechanical pocket watch;
-                    [7, 12] Mechanical pocket watch turns into a mechanical rose.</div>
+                <div class="prompt">An aerial shot of a swarm of drones flying in formation, mimicking the behavior of a flock of birds. The camera captures the synchronized movements, the technological design of the drones, and the interplay between natural and artificial intelligence.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -802,14 +810,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/evolution_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_3.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] An ape approaches the cave and gradually stands upright; [5, 10] The
-                    primitive human walks out of the cave, starts riding a horse, becomes a soldier.</div>
+                <div class="prompt">A deserted tropical island with crystal-clear waters, dense palm trees, and a sandy beach. The camera slowly pans across the island, revealing a hidden cove with a small, makeshift shelter and a campfire. The animation emphasizes the serene beauty of the natural environment, with attention to the gentle sway of the palm trees and the sparkling reflections on the water.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -818,15 +825,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/jellyfish_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_4.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] The camera follows the dandelion; [5, 10] The dandelion dives into the deep
-                    sea and transforms into a glowing jellyfish.
-                </div>
+                <div class="prompt">A close-up shot of a hummingbird hovering in front of a brightly colored flower, its wings a blur of motion. The camera focuses on the precision of its hovering, the quick darting movements, and the delicate sipping of nectar.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -835,15 +840,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/cabin_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_5.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] The camera pushes forward, then dives downward; [5, 10] The camera pushes in,
-                    dives downward, and enters the cabin through the doorway.
-                </div>
+                <div class="prompt">A wide shot of a group of friends, all in their late 20s, enjoying a sunny day in a backyard. Some are grilling food, others are sitting at a picnic table, and a couple is playing with a dog. The camera captures the laughter, the food being passed around, and the casual, friendly interactions.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -852,18 +855,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/lifetime_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_6.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] Zoom into extreme close-up of a man's eye; camera flies through the right
-                    pupil to reveal a man walking fast; [5, 10] Man walks forward; a golden butterfly enters. He follows
-                    it with his gaze until its wings fully obscure the lens; [10, 15] Butterfly flies away revealing a
-                    golden meadow; a boy runs in to chase it; [15, 20] The boy turns around, faces the camera directly,
-                    smiling.
-                </div>
+                <div class="prompt">In this wide shot video, a vibrant Chinese Dragon dances amidst a crowd celebrating Chinese Lunar New Year. The dragon, a symbol of power and good fortune, weaves through the streets, its colorful silk body glistening under the festive lights. As the camera tilts up, we see fireworks illuminating the night sky, their explosions echoing the joyous cheers of the crowd. The energy and excitement of the celebration are palpable, capturing the spirit of renewal and hope associated with the Lunar New Year.</div>
             </div>
         </div>
     </section>
@@ -887,15 +885,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/surf_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_7.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[3, 7] Camera follows a man skiing. The snow ahead transitions into the sea. His
-                    snowboard transforms into a yellow surfboard, and he starts surfing.
-                </div>
+                <div class="prompt">Show a group of people debating a challenging decision that could have far-reaching consequences. The camera highlights the varying perspectives and moral considerations.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -904,14 +900,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/model2_with_cond_v1.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_8.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 10] seamless transition.
-                </div>
+                <div class="prompt">A static close-up shot shows a digital clock with a green number rapidly counting up from 10:47 to 12:45. The entire scene in the video remains unchanged.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -920,14 +915,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/model3_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_9.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[2, 6] Seamless character outfit change.
-                </div>
+                <div class="prompt">The camera remains still, a girl with a ponytail and wearing a yellow dress walks forward with a metal bucket of water in her hand, the background is a garden path, soft afternoon sunlight.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -936,15 +930,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/model1_with_cond_v1.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_10.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[2, 4] Camera push-in; [6, 8] The model puts down the silver ball, and the camera
-                    pulls back.
-                </div>
+                <div class="prompt">The camera remains still, a man with a beard and wearing a green sweater holds a ceramic mug with his hand and moves it, the background is a cozy kitchen, warm indoor lighting.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -953,14 +945,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/cat_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_11.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 10] seamless transition.
-                </div>
+                <div class="prompt">A dynamic tracking shot following a cheetah as it sprints across a savanna, the camera matching its speed and movement. The camera captures the power and grace of the cheetah’s run, the dust kicked up by its paws, and the blurred background of the fast-paced chase.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -969,14 +960,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/portrait_with_cond_v3.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_12.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 10] seamless transition.
-                </div>
+                <div class="prompt">The camera remains still, a boy with short black hair and wearing a yellow t-shirt holds the water cup in his left hand and lifts it up, the background is a kitchen, bright morning light.</div>
             </div>
         </div>
     </section>
@@ -999,15 +989,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/motorbike_astronaut_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_13.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 3] The man takes off his helmet; [5, 10] The man rides the motorcycle into the
-                    sky, flies into outer space, and morphs into an astronaut.
-                </div>
+                <div class="prompt">A man runs through a forest with the camera fixed to his chest, showing his frantic expressions and the trees rushing past in a blur.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1016,15 +1004,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/tree_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_14.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] Seed sprouts and grows into a pine tree; [5, 10] Camera orbits pine tree as
-                    it transforms into a Christmas tree.
-                </div>
+                <div class="prompt">A high-paced shot of a pack of wolves working together to hunt a deer in a forest. The camera captures their coordinated movements, strategic positioning, and the silent communication among the pack members as they close in on their prey.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1033,15 +1019,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/squirrel_with_cond_v1.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_15.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] A squirrel slides down the ice slide and runs onto the grass; [8, 12] The
-                    little squirrel keeps running, comes to the treehouse, and picks up a pinecone.
-                </div>
+                <div class="prompt">The camera remains still, a boy with short blonde hair and wearing a green shirt blew gas into the balloon, the background is a bright living room, soft afternoon light.</div>
             </div>
         </div>
     </section>
@@ -1063,15 +1047,13 @@
                 </div>
                 <video autoplay playsinline muted loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/plane_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_16.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] An airplane flies quickly across the sky, leaving a smoke trail that spells
-                    out the word "Travel".
-                </div>
+                <div class="prompt">The camera remains still, a muscular athlete in a blue jersey rides a mountain bike uphill, the background is a forested trail, bright midday sunlight.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1080,15 +1062,13 @@
                 </div>
                 <video autoplay playsinline muted loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/building_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_17.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] A beam scans upward from the foundation, rapidly constructing the building
-                    layer by layer from bottom to top.
-                </div>
+                <div class="prompt">The camera remains still, a woman with long black hair and wearing a green sweater walks towards the sofa in the living room and sits on it after reaching it, the background is a modern living room, warm ambient lighting.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1097,14 +1077,13 @@
                 </div>
                 <video autoplay playsinline muted loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/hamburger_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_18.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[0, 5] A vertical assembly process. On a wooden table, a bun base, patty, cheese,
-                    lettuce, and tomatoes fall from above in sequence.</div>
+                <div class="prompt">The camera remains still, a woman with long brown hair and wearing a white blouse puts on black sunglasses with her hands, the background is a sunny beach, bright midday sunlight.</div>
             </div>
         </div>
     </section>
@@ -1126,15 +1105,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/cat_ride_horse_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_19.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[3, 10] A horse walks in. The kitten jumps from a bike onto the horse's back. Camera
-                    pans left; the kitten rides the horse to a stream.
-                </div>
+                <div class="prompt">In this long shot video, a lone cowboy traverses a vast, open plain on horseback, bathed in the warm, golden hues of a breathtaking sunset. As the camera pans right, mirroring the cowboy's journey, the expansive sky transforms into a canvas of vibrant oranges, reds, and purples, casting long shadows across the undulating terrain. The cowboy, a silhouette against the setting sun, embodies a sense of solitude and adventure against the backdrop of the American West.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1143,14 +1120,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/jingerbread_man_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_20.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[3, 8] Static shot. Snow falling. Gingerbread man dances, swaying left and right.
-                </div>
+                <div class="prompt">A stop-motion animation featuring a tiny, handmade clay character who lives in a cozy, intricately detailed dollhouse. The camera follows the character as it moves from room to room, interacting with various objects like a miniature teapot and a toy train. The animation captures the unique, slightly jerky movement characteristic of stop-motion, with each frame showing the careful positioning of the character and props.</div>
             </div>
             <div class="prompt-wrap full-screen-wrap" style="position: relative;">
                 <div class="loading-placeholder">
@@ -1159,14 +1135,13 @@
                 </div>
                 <video autoplay muted playsinline loop
                     onloadeddata="this.style.display='block'; this.previousElementSibling.style.display='none';"
-                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/321eh7vhpxubqps/sport_with_cond.mp4"></video>
+                    src="https://lf3-static.bytednsdoc.com/obj/eden-cn/aavjzeh7vhauloz/test_cases/20B_firstrun_seedance_part4_T2V_720P_93_wan22_vae_from_480p_add_digitalhuman/samples/iter_0146000_cfg4.5_apg30/iter_0146000_cfg4.5_apg30/video_21.mp4"></video>
                 <div class="video-progress-gradient"></div>
                 <div class="video-progress-container">
                     <div class="video-progress-bar"></div>
                     <div class="video-progress-time">0:00 / 0:00</div>
                 </div>
-                <div class="prompt">[5, 10] Two people hugging each other.
-                </div>
+                <div class="prompt">The camera remains still, a man with short black hair and wearing a white shirt picked up the knife placed on the table and use it to cut food, the background is a modern kitchen, bright overhead lighting.</div>
             </div>
         </div>
     </section>
